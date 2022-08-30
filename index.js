@@ -14,7 +14,7 @@ const client = Client.forTestnet().setOperator(
   operatorPrivateKey
 );
 
-// generate supply key in charge of authroizing token mints and burn txn
+// generate supply key in charge of authorizing token mints and burn txn
 const supplyKey = PrivateKey.generateED25519();
 
 const fungibleTokenExample = async (supplyKey) => {
