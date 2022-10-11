@@ -1,18 +1,16 @@
 const { TokenMintTransaction } = require('@hashgraph/sdk');
 
 const mintToken = async (client, tokenId, amount, supplyKey) => {
-  const mintTokenTxn = new TokenMintTransaction()
-    .setTokenId(tokenId)
-    .setAmount(amount)
-    .freezeWith(client);
+  //1. building the token mint transaction
 
-  const mintTokenTxnSigned = await mintTokenTxn.sign(supplyKey);
 
-  // submit txn to heder network
-  const txnResponse = await mintTokenTxnSigned.execute(client);
+  //2. sign txn
 
-  const mintTokenRx = await txnResponse.getReceipt(client);
-  const mintTokenStatus = mintTokenRx.status.toString();
+
+  //3. submit txn to hedera network
+
+  //4. request receipt
+
 
   console.log(`Token mint was a ${mintTokenStatus}`);
 };
