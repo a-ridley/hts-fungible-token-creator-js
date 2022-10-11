@@ -19,8 +19,8 @@ const supplyKey = PrivateKey.generateED25519();
 
 const fungibleTokenExample = async (supplyKey) => {
   console.log('Step 1: Create a treasury account');
-  // Create an account to be the holder of the collection
-  // This is called a treasurey account
+  // Create an account to be the holder of the tokens
+  // This is called a treasury account
   const [treasuryAccId, treasuryAccPvKey] = await createAccount(client, 50);
   console.log(
     `Treasury Account Id: ${treasuryAccId}
