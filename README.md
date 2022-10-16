@@ -2,8 +2,10 @@
 
 To run this example:
 
-- `npm install` or `yarn`
-- `npm run dev` or `yarn dev`
+- Clone repo, set up .env file, make sure you're on the main branch and run `node index.js`
+
 
 ## Hedera Documentation
 [Token Service](https://docs.hedera.com/guides/docs/sdks/tokens)
+
+
